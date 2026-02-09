@@ -1,10 +1,11 @@
-# Stockholm Pub Crawl
+# Nordic Pub Crawl
 
-A simple web app for discovering and sharing pub crawl routes in Stockholm, Sweden.
+A simple web app for discovering and sharing pub crawl routes across Europe.
 
 ## Features
 
-- 🍺 Pre-planned pub crawl routes across Stockholm
+- 🍺 Pre-planned pub crawl routes in Stockholm, Gothenburg, Malmö, Amsterdam, and Helsinki
+- 🌍 Filter routes by city
 - 🗺️ Interactive maps with route visualization
 - 📍 Detailed pub information and specialties
 - 🔗 Share routes with friends
