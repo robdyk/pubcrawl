@@ -541,6 +541,48 @@ const crawlRoutes = [
     ]
   },
   {
+    id: 'copenhagen-norrebro',
+    name: 'Nørrebro Neighborhood Crawl',
+    description: 'Multicultural bars in Copenhagen\'s vibrant district',
+    duration: '3-4 hours',
+    city: 'Copenhagen',
+    country: 'Denmark',
+    pubs: [
+      {
+        name: 'Brus',
+        address: 'Guldbergsgade 29, Copenhagen',
+        lat: 55.6912,
+        lng: 12.5534,
+        description: 'Craft beer bar and restaurant with rooftop terrace',
+        specialty: 'Danish craft and natural wines'
+      },
+      {
+        name: 'Ørsted Ølbar',
+        address: 'Nørre Farimagsgade 13, Copenhagen',
+        lat: 55.6845,
+        lng: 12.5689,
+        description: 'Cozy beer bar with rotating taps',
+        specialty: 'Rare Danish microbrews'
+      },
+      {
+        name: 'Kassen',
+        address: 'Nørrebrogade 18C, Copenhagen',
+        lat: 55.6878,
+        lng: 12.5612,
+        description: 'Neighborhood bar with local vibe',
+        specialty: 'Danish craft and cocktails'
+      },
+      {
+        name: 'Nørrebro Bryghus',
+        address: 'Ryesgade 3, Copenhagen',
+        lat: 55.6889,
+        lng: 12.5567,
+        description: 'Local brewery with restaurant',
+        specialty: 'House-brewed beers and pub food'
+      }
+    ]
+  },
+  {
     id: 'aarhus-latin-quarter',
     name: 'Aarhus Latin Quarter Crawl',
     description: 'Historic pubs in Denmark\'s second city',
