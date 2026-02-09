@@ -1,9 +1,11 @@
 // State management
 let currentCrawl = null;
 let map = null;
+let selectedCity = 'all';
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
+    renderCityFilters();
     renderRoutes();
     setupEventListeners();
     handleUrlHash();
@@ -31,14 +33,43 @@ function setupEventListeners() {
     });
 }
 
+function renderCityFilters() {
+    const cities = ['all', ...new Set(crawlRoutes.map(r => r.city))];
+    const filtersDiv = document.getElementById('city-filters');
+    
+    filtersDiv.innerHTML = `
+        <div class="city-filters">
+            ${cities.map(city => `
+                <button 
+                    class="city-filter-btn ${selectedCity === city ? 'active' : ''}" 
+                    onclick="filterByCity('${city}')"
+                >
+                    ${city === 'all' ? '🌍 All Cities' : city}
+                </button>
+            `).join('')}
+        </div>
+    `;
+}
+
+function filterByCity(city) {
+    selectedCity = city;
+    renderCityFilters();
+    renderRoutes();
+}
+
 function renderRoutes() {
     const grid = document.getElementById('routes-grid');
-    grid.innerHTML = crawlRoutes.map(route => `
+    const filteredRoutes = selectedCity === 'all' 
+        ? crawlRoutes 
+        : crawlRoutes.filter(r => r.city === selectedCity);
+    
+    grid.innerHTML = filteredRoutes.map(route => `
         <div class="route-card" onclick="navigateToCrawl('${route.id}')">
+            <div class="route-location">📍 ${route.city}, ${route.country}</div>
             <h3>${route.name}</h3>
             <p>${route.description}</p>
             <div class="route-meta">
-                <span>📍 ${route.pubs.length} pubs</span>
+                <span>${route.pubs.length} pubs</span>
                 <span>⏱️ ${route.duration}</span>
             </div>
         </div>
