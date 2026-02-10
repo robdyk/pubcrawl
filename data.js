@@ -1104,9 +1104,9 @@ const crawlRoutes = [
       },
       {
         name: 'Fjäderholmarnas Krog',
-        address: 'Fjäderholmarna, Stockholm',
-        lat: 59.3156,
-        lng: 18.1234,
+        address: 'Fjäderholmarna, Stockholm Archipelago',
+        lat: 59.3167,
+        lng: 18.1389,
         description: 'Island restaurant, 25min ferry ride',
         specialty: 'Local craft and seafood'
       },
