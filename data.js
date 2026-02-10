@@ -975,5 +975,326 @@ const crawlRoutes = [
         specialty: 'Cocktails and Finnish beers with a view'
       }
     ]
+  },
+
+  // THEMED ROUTES - ROOFTOP BARS
+  {
+    id: 'stockholm-rooftop',
+    name: 'Stockholm Sky High Route',
+    description: 'Rooftop bars with panoramic city views',
+    duration: '3-4 hours',
+    city: 'Stockholm',
+    country: 'Sweden',
+    category: 'rooftop',
+    pubs: [
+      {
+        name: 'Tak',
+        address: 'Brunkebergstorg 2-4, Stockholm',
+        lat: 59.3328,
+        lng: 18.0645,
+        description: 'Stylish rooftop with Nordic cuisine',
+        specialty: 'Craft cocktails and city views'
+      },
+      {
+        name: 'Mosebacke',
+        address: 'Mosebacke Torg 3, Stockholm',
+        lat: 59.3167,
+        lng: 18.0734,
+        description: 'Historic terrace overlooking Södermalm',
+        specialty: 'Swedish beers and sunset views'
+      },
+      {
+        name: 'Himlen',
+        address: 'Götgatan 78, Stockholm',
+        lat: 59.3145,
+        lng: 18.0689,
+        description: 'Sky-high bar on 26th floor',
+        specialty: 'Premium cocktails and 360° views'
+      }
+    ]
+  },
+  {
+    id: 'copenhagen-rooftop',
+    name: 'Copenhagen Heights Crawl',
+    description: 'Elevated bars with skyline views',
+    duration: '3 hours',
+    city: 'Copenhagen',
+    country: 'Denmark',
+    category: 'rooftop',
+    pubs: [
+      {
+        name: 'The Roof',
+        address: 'Vester Voldgade 83, Copenhagen',
+        lat: 55.6756,
+        lng: 12.5634,
+        description: 'Trendy rooftop in Tivoli area',
+        specialty: 'Cocktails and Danish craft'
+      },
+      {
+        name: 'Bryggeriet Apollo Bar',
+        address: 'Vesterbrogade 3, Copenhagen',
+        lat: 55.6734,
+        lng: 12.5645,
+        description: 'Rooftop brewery with harbor views',
+        specialty: 'House-brewed beers'
+      },
+      {
+        name: 'Nørdhavn Rooftop',
+        address: 'Sundkrogsgade 21, Copenhagen',
+        lat: 55.7012,
+        lng: 12.5989,
+        description: 'Modern rooftop with waterfront',
+        specialty: 'Craft beers and natural wines'
+      }
+    ]
+  },
+  {
+    id: 'oslo-rooftop',
+    name: 'Oslo Summit Circuit',
+    description: 'Rooftop bars overlooking the fjord',
+    duration: '3 hours',
+    city: 'Oslo',
+    country: 'Norway',
+    category: 'rooftop',
+    pubs: [
+      {
+        name: 'Stratos',
+        address: 'Biskop Gunnerus gate 3, Oslo',
+        lat: 59.9112,
+        lng: 10.7523,
+        description: 'Revolving restaurant with panoramic views',
+        specialty: 'Premium cocktails and Norwegian beers'
+      },
+      {
+        name: 'Tjuvholmen Rooftop',
+        address: 'Tjuvholmen Allé 14, Oslo',
+        lat: 59.9078,
+        lng: 10.7234,
+        description: 'Waterfront rooftop with fjord views',
+        specialty: 'Seafood and craft beers'
+      },
+      {
+        name: 'Summit Bar',
+        address: 'Sonja Henies plass 3, Oslo',
+        lat: 59.9089,
+        lng: 10.7512,
+        description: 'Modern rooftop in Aker Brygge',
+        specialty: 'Cocktails and city views'
+      }
+    ]
+  },
+
+  // THEMED ROUTES - BOAT BAR CRAWLS
+  {
+    id: 'stockholm-boat',
+    name: 'Stockholm Archipelago Boat Crawl',
+    description: 'Island-hopping pub tour on ferries',
+    duration: '6-8 hours',
+    city: 'Stockholm',
+    country: 'Sweden',
+    category: 'boat',
+    pubs: [
+      {
+        name: 'Djurgårdsbron Sjöcafé',
+        address: 'Galärvarvsvägen 10, Stockholm',
+        lat: 59.3234,
+        lng: 18.0912,
+        description: 'Waterfront café accessible by ferry',
+        specialty: 'Swedish beers and harbor views'
+      },
+      {
+        name: 'Fjäderholmarnas Krog',
+        address: 'Fjäderholmarna, Stockholm',
+        lat: 59.3156,
+        lng: 18.1234,
+        description: 'Island restaurant, 25min ferry ride',
+        specialty: 'Local craft and seafood'
+      },
+      {
+        name: 'Vaxholms Café',
+        address: 'Vaxholm Island, Stockholm',
+        lat: 59.4023,
+        lng: 18.3512,
+        description: 'Historic island pub, 1 hour ferry',
+        specialty: 'Traditional Swedish beers'
+      }
+    ]
+  },
+  {
+    id: 'copenhagen-boat',
+    name: 'Copenhagen Harbor Hop',
+    description: 'Waterfront bars via harbor bus',
+    duration: '5-6 hours',
+    city: 'Copenhagen',
+    country: 'Denmark',
+    category: 'boat',
+    pubs: [
+      {
+        name: 'Reffen Bar',
+        address: 'Refshalevej 167, Copenhagen',
+        lat: 55.6923,
+        lng: 12.6089,
+        description: 'Street food market, harbor bus accessible',
+        specialty: 'Danish craft and street food'
+      },
+      {
+        name: 'Halvandet',
+        address: 'Refshalevej 325, Copenhagen',
+        lat: 55.6945,
+        lng: 12.6123,
+        description: 'Waterfront bar on Refshaleøen',
+        specialty: 'Craft beers and harbor views'
+      },
+      {
+        name: 'Ofelia Beach Bar',
+        address: 'Kvæsthusbroen, Copenhagen',
+        lat: 55.6812,
+        lng: 12.5923,
+        description: 'Beach bar by the opera house',
+        specialty: 'Summer cocktails and Danish beers'
+      }
+    ]
+  },
+  {
+    id: 'oslo-boat',
+    name: 'Oslo Fjord Island Crawl',
+    description: 'Island bars via fjord ferries',
+    duration: '5-7 hours',
+    city: 'Oslo',
+    country: 'Norway',
+    category: 'boat',
+    pubs: [
+      {
+        name: 'Hovedøya Kiosk',
+        address: 'Hovedøya Island, Oslo',
+        lat: 59.8956,
+        lng: 10.7456,
+        description: 'Island café, 15min ferry from Aker Brygge',
+        specialty: 'Norwegian beers and island vibes'
+      },
+      {
+        name: 'Gressholmen Kro',
+        address: 'Gressholmen Island, Oslo',
+        lat: 59.8834,
+        lng: 10.7234,
+        description: 'Historic island restaurant, 20min ferry',
+        specialty: 'Traditional Norwegian beers'
+      },
+      {
+        name: 'Langøyene Beach Bar',
+        address: 'Langøyene Island, Oslo',
+        lat: 59.8912,
+        lng: 10.7612,
+        description: 'Beach bar on island',
+        specialty: 'Summer beers and beach atmosphere'
+      }
+    ]
+  },
+
+  // THEMED ROUTES - THEMED BARS
+  {
+    id: 'stockholm-themed',
+    name: 'Stockholm Fantasy & Theme Bars',
+    description: 'Viking halls, pirate dens, themed pubs',
+    duration: '4 hours',
+    city: 'Stockholm',
+    country: 'Sweden',
+    category: 'themed',
+    pubs: [
+      {
+        name: 'Aifur Krog & Bar',
+        address: 'Västerlånggatan 68, Stockholm',
+        lat: 59.3245,
+        lng: 18.0689,
+        description: 'Viking-themed restaurant with mead',
+        specialty: 'Viking mead and medieval atmosphere'
+      },
+      {
+        name: 'Sjätte Tunnan',
+        address: 'Skomakargatan 6, Stockholm',
+        lat: 59.3256,
+        lng: 18.0712,
+        description: 'Medieval cellar bar in Gamla Stan',
+        specialty: 'Medieval beers and rustic vibes'
+      },
+      {
+        name: 'Icebar Stockholm',
+        address: 'Vasaplan 4, Stockholm',
+        lat: 59.3312,
+        lng: 18.0589,
+        description: 'Bar made entirely of ice',
+        specialty: 'Vodka cocktails in ice glasses'
+      }
+    ]
+  },
+  {
+    id: 'copenhagen-themed',
+    name: 'Copenhagen Themed Bar Adventure',
+    description: 'Pirates, Vikings, quirky themed bars',
+    duration: '4 hours',
+    city: 'Copenhagen',
+    country: 'Denmark',
+    category: 'themed',
+    pubs: [
+      {
+        name: 'Valhalla Bar',
+        address: 'Gothersgade 55, Copenhagen',
+        lat: 55.6834,
+        lng: 12.5812,
+        description: 'Viking-themed bar with Norse mythology',
+        specialty: 'Mead and Viking ales'
+      },
+      {
+        name: 'The Jane',
+        address: 'Gråbrødretorv 8, Copenhagen',
+        lat: 55.6789,
+        lng: 12.5734,
+        description: 'Jungle-themed cocktail bar',
+        specialty: 'Tropical cocktails and craft beers'
+      },
+      {
+        name: 'Lidkoeb',
+        address: 'Vesterbrogade 72B, Copenhagen',
+        lat: 55.6723,
+        lng: 12.5512,
+        description: 'Pharmacy-themed cocktail bar',
+        specialty: 'Craft cocktails and rare spirits'
+      }
+    ]
+  },
+  {
+    id: 'oslo-themed',
+    name: 'Oslo Themed Bar Quest',
+    description: 'Viking halls and quirky themed pubs',
+    duration: '3-4 hours',
+    city: 'Oslo',
+    country: 'Norway',
+    category: 'themed',
+    pubs: [
+      {
+        name: 'Ægir Bryggeri',
+        address: 'Waldemar Thranes gate 86, Oslo',
+        lat: 59.9312,
+        lng: 10.7456,
+        description: 'Viking-themed brewery with Norse decor',
+        specialty: 'Strong ales and barrel-aged beers'
+      },
+      {
+        name: 'Tilt',
+        address: 'Thorvald Meyers gate 32, Oslo',
+        lat: 59.9234,
+        lng: 10.7589,
+        description: 'Retro arcade bar with pinball',
+        specialty: 'Craft beers and vintage games'
+      },
+      {
+        name: 'Himkok',
+        address: 'Storgata 27, Oslo',
+        lat: 59.9145,
+        lng: 10.7512,
+        description: 'Distillery-themed cocktail bar',
+        specialty: 'House-distilled spirits and craft'
+      }
+    ]
   }
 ];
